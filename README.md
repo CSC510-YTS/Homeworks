@@ -1,5 +1,7 @@
 # HW1
 
+## This is a homework project to try out github workflow, and badges for testing, codecoverage, license, and languages used.
+
 [![Python](https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge&logo=python&logoColor=blue)](https://docs.python.org/3.13/whatsnew/3.13.html)
 
 [![MIT](https://img.shields.io/badge/License-MIT-red?style=for-the-badge)](https://opensource.org/license/mit)
