@@ -9,10 +9,3 @@ def team_member(name):
         return f"{name}'s email is {team_members[name]}"
     else:
         return "This individual is not in our team"
-
-print(team_member("Tanuj"))
-print(team_member("Shubham"))
-print(team_member("Yunfei"))
-print(team_member("Dijkstra"))
-
-# team_members("WRONG METHOD NAME!")
