@@ -8,7 +8,7 @@
 
 [![Linux](https://img.shields.io/badge/Platform-Linux-yellow?style=for-the-badge&logo=linux&logoColor=blue)](https://www.linux.org/)
 
-[![Build](https://img.shields.io/github/actions/workflow/status/CSC510-YTS/HW1/python-app.yml?style=for-the-badge)](https://github.com/CSC510-YTS/HW1/actions/workflows/python-app.yml)
+[![Build](https://img.shields.io/github/actions/workflow/status/CSC510-YTS/HW1/python-app.yml?style=for-the-badge&logo=pytest&logoColor=green)](https://github.com/CSC510-YTS/HW1/actions/workflows/python-app.yml)
 
 [![codecov](https://codecov.io/gh/CSC510-YTS/HW1/graph/badge.svg?token=QFB8RM9WKN)](https://codecov.io/gh/CSC510-YTS/HW1)
 
