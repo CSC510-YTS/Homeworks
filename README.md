@@ -12,5 +12,10 @@
 
 [![codecov](https://img.shields.io/codecov/c/github/CSC510-YTS/HW1?style=for-the-badge&token=QFB8RM9WKN)](https://codecov.io/gh/CSC510-YTS/HW1)
 
-Setting up the environment for GitHub Codespaces
+## Setting up the environment for GitHub Codespaces
 > sudo apt update -y; sudo  apt upgrade -y; sudo apt install software-properties-common -y; sudo add-apt-repository ppa:deadsnakes/ppa -y ; sudo apt update -y ; sudo apt install python3.13 entr -y; pip install pytest pytest-cov;
+
+## Team member
+Yunfei Chen - ychen267@ncsu.edu <br />
+Tanuj Kulkarni - tskulkar@ncsu.edu <br />
+Shubham Vijay Tidke - stidke@ncsu.edu <br />
