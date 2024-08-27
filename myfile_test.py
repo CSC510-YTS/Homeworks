@@ -8,11 +8,3 @@ def test_success_cases():
 
 def test_failure_cases():
      assert team_member("Dr.Tim")=="I am Batman"
-
-
-print(team_member("Tanuj"))
-print(team_member("Shubham"))
-print(team_member("Yunfei"))
-print(team_member("Dijkstra"))
-
-# team_members("WRONG METHOD NAME!")
