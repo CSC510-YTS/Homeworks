@@ -1,0 +1,5 @@
+rand.py
+    F 7:0 random_array - A
+
+1 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.0)

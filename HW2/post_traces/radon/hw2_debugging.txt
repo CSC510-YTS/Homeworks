@@ -1,0 +1,16 @@
+#Trace before code changes
+hw2_debugging.py
+    F 21:0 recombine - B
+    F 8:0 merge_sort - A
+
+2 blocks (classes, functions, methods) analyzed.
+Average complexity: A (4.0)
+
+#Trace after code changes
+hw2_debugging.py
+    F 21:0 recombine - A
+    F 8:0 merge_sort - A
+    F 41:0 merge_sub_array - A
+
+3 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.6666666666666665)
