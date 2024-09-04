@@ -6,7 +6,7 @@ import subprocess
 
 def random_array(arr):
     """
-    This function is to grenarte a random array 
+    This function is to grenarte a random array
     """
     shuffled_num = None
     for i, _ in enumerate(arr):
