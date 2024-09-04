@@ -1,6 +1,5 @@
 import pytest
 import copy
-import rand
 from hw2_debugging import merge_sort
 
 
