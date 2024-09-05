@@ -8,12 +8,15 @@
 
 [![Linux](https://img.shields.io/badge/Platform-Linux-yellow?style=for-the-badge&logo=linux&logoColor=blue)](https://www.linux.org/)
 
-[![Build](https://img.shields.io/github/actions/workflow/status/CSC510-YTS/HW1/python-app.yml?style=for-the-badge&logo=pytest&logoColor=green)](https://github.com/CSC510-YTS/HW1/actions/workflows/python-app.yml)
+[![Build](https://img.shields.io/github/actions/workflow/status/CSC510-YTS/Homeworks/python-app.yml?style=for-the-badge&logo=pytest&logoColor=green)](https://github.com/CSC510-YTS/Homeworks/actions/workflows/python-app.yml)
 
-[![codecov](https://img.shields.io/codecov/c/github/CSC510-YTS/HW1?style=for-the-badge&token=QFB8RM9WKN)](https://codecov.io/gh/CSC510-YTS/HW1)
+[![codecov](https://img.shields.io/codecov/c/github/CSC510-YTS/Homeworks?style=for-the-badge&token=QFB8RM9WKN)](https://codecov.io/gh/CSC510-YTS/Homeworks)
 
 ## Setting up the environment for GitHub Codespaces
 > sudo apt update -y; sudo  apt upgrade -y; sudo apt install software-properties-common -y; sudo add-apt-repository ppa:deadsnakes/ppa -y ; sudo apt update -y ; sudo apt install python3.13 entr -y; pip install pytest pytest-cov;
+
+# HW2
+
 
 ## Team member
 Yunfei Chen - ychen267@ncsu.edu <br />
