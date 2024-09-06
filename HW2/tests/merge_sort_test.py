@@ -1,6 +1,6 @@
 import pytest
 import copy
-from hw2_debugging import merge_sort
+from HW2.src.hw2_debugging import merge_sort
 
 
 def test_merge_sort_ascending_ordered_array():

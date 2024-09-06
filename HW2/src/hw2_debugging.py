@@ -2,7 +2,7 @@
 This is the python file of mergeSort
 """
 
-import rand
+from HW2.src import rand
 
 
 def merge_sort(arr):
