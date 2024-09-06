@@ -52,22 +52,24 @@ jobs:
         pip install radon
         radon cc . > HW2/latest_logging/radon_cc_logging
         radon mi . > HW2/latest_logging/radon_mi_logging
-    - name: check for changes
+    - name: Check for changes # This blocks behaviour is just the opposite
       run: |
-        if git diff --exit-code; then
-          echo "::set-env name=changes_exist::true"
+        if git diff-index --quiet HEAD; then
+          echo "changes_exist=true" >> $GITHUB_ENV
         else
-          echo "::set-env name=changes_exist::false"
-        fi
+          echo "changes_exist=false" >> $GITHUB_ENV
+    - name: Debug changes
+      run: |
+          echo "${{ env.changes_exist }}"
     - name: Commit
-      if: ${{ env.changes_exist == 'true' }}
+      if: env.changes_exist == 'true'
       run: |
         git config --local user.name  ${{ github.actor }}        
         git config --local user.email "${{ github.actor }}@users.noreply.github.com"
         git add HW2/latest_logging
         git commit -a -m "[Workflow] update the loggings"
     - name: Push changes  # push the output folder to your repo
-      if: ${{ env.changes_exist == 'true' }}
+      if: env.changes_exist == 'true'
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
