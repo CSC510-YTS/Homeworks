@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v3
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
       with:
@@ -53,13 +53,12 @@ jobs:
         radon mi . > HW2/latest_logging/radon_mi_logging
     - name: Commit
       run: |
-        git config --local user.name "github-actions[bot]"
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name  ${{ github.actor }}        
+        git config --local user.email "${{ github.actor }}@users.noreply.github.com"
         git add HW2/latest_logging
         git commit -a -m "[Workflow] update the loggings"
-    - name: Push changes
+    - name: Push changes  # push the output folder to your repo
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
         force: true
