@@ -53,7 +53,7 @@ jobs:
         radon mi . > HW2/latest_logging/radon_mi_logging
     - name: Commit
       run: |
-        git config --local user.name "github-actions[bot]"
+        git config --local user.name "ShubhamTidke"
         git config --local user.email "shubhamvt2000@gmail.com"
         git add HW2/latest_logging
         git commit -m "[Workflow] update the loggings"
