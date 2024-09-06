@@ -58,6 +58,8 @@ jobs:
           echo "changes_exist=true" >> $GITHUB_ENV
         else
           echo "changes_exist=false" >> $GITHUB_ENV
+        fi
+        
     - name: Debug changes
       run: |
           echo "${{ env.changes_exist }}"
