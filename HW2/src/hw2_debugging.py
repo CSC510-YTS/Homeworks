@@ -32,7 +32,12 @@ def recombine(left_arr, right_arr):
         else:
             merge_arr[left_index + right_index] = right_arr[right_index]
             right_index += 1
-        merge_sub_array(left_index, right_index, right_arr, left_arr, merge_arr)
+        merge_sub_array(
+            left_index,
+            right_index,
+            right_arr,
+            left_arr,
+            merge_arr)
 
     return merge_arr
 
@@ -43,10 +48,14 @@ def merge_sub_array(
         right_arr: list[int],
         left_arr: list[int],
         merge_arr: list[int]):
+    """
+    The helper method to merge sub array
+    """
     sub_arr = right_arr if right_index < len(right_arr) else left_arr
-    sub_start_index = right_index if right_index < len(right_arr) else left_index
+    sub_start_index = right_index if right_index < len(
+        right_arr) else left_index
     start_index = left_index if right_index < len(right_arr) else right_index
-    
+
     for i in range(sub_start_index, len(sub_arr)):
         merge_arr[start_index + i] = sub_arr[i]
 
