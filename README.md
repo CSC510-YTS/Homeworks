@@ -16,6 +16,11 @@
 > sudo apt update -y; sudo  apt upgrade -y; sudo apt install software-properties-common -y; sudo add-apt-repository ppa:deadsnakes/ppa -y ; sudo apt update -y ; sudo apt install python3.13 entr -y; pip install pytest pytest-cov;
 
 # HW2
+[![format: autopep8](https://img.shields.io/badge/format-autopep8-green?style=for-the-badge&logoColor=green)](https://pypi.org/project/autopep8/)
+
+[![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen?style=for-the-badge)](https://github.com/pylint-dev/pylint)
+
+[![metric: radon](https://img.shields.io/badge/metric-radon-orange?style=for-the-badge)](https://radon.readthedocs.io/en/latest/)
 
 
 ## Team member
