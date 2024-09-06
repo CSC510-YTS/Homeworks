@@ -10,7 +10,8 @@ on:
     branches: [ "main" ]
 
 permissions:
-  contents: read
+  contents: write           # 'write' access to repository contents
+  pull-requests: write      # 'write' access to pull requests
 
 jobs:
   build:
@@ -18,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
       with:
