@@ -58,7 +58,7 @@ jobs:
         git add HW2/latest_logging
         git commit -m "[Workflow] update the loggings"
     - name: Push changes
-      uses: ad-m/github-push-action@main
+      uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.HW2_TOKEN }}
         force: true
