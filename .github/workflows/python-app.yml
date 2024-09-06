@@ -53,12 +53,12 @@ jobs:
         radon mi . > HW2/latest_logging/radon_mi_logging
     - name: Commit
       run: |
-        git config --local user.name ${{ github.actor }}
-        git config --local user.email "${{ github.actor }}@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git config --local user.email "shubhamvt2000@gmail.com"
         git add HW2/latest_logging
         git commit -m "[Workflow] update the loggings"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
-        github_token: ${{ secrets.HW2_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         force: true
