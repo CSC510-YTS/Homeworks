@@ -46,5 +46,8 @@ jobs:
       run: |
         pip install pylint
         pylint HW2/src > HW2/latest_logging/pylint_logging
-
-
+    - name: Run radon cc and mi
+      run: |
+        pip install radon
+        radon cc . > HW2/latest_logging/radon_cc_logging
+        radon mi . > HW2/latest_logging/radon_mi_logging
