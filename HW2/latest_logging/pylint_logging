@@ -1,4 +1,6 @@
+************* Module HW2.src.hw2_debugging
+HW2/src/hw2_debugging.py:25:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
 
-------------------------------------
-Your code has been rated at 10.00/10
+------------------------------------------------------------------
+Your code has been rated at 9.71/10 (previous run: 9.71/10, +0.00)
 
