@@ -2,8 +2,6 @@
 This is the python file of mergeSort
 """
 from HW2.src import rand
-
-
 def merge_sort(arr):
     """
     This is the main function of mergeSort
@@ -14,8 +12,6 @@ def merge_sort(arr):
     half = len(arr) // 2
 
     return recombine(merge_sort(arr[:half]), merge_sort(arr[half:]))
-
-
 def recombine(left_arr, right_arr):
     """
     This is the function to merge the two halves.
