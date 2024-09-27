@@ -61,7 +61,7 @@ jobs:
         radon mi . > HW2/latest_logging/radon_mi_logging
     - name: Check for changes # This blocks behaviour is just the opposite
       run: |
-        if git diff-index --quiet HEAD; then
+        if git diff-index HEAD; then
           echo "changes_exist=true" >> $GITHUB_ENV
         else
           echo "changes_exist=false" >> $GITHUB_ENV
