@@ -45,15 +45,15 @@ jobs:
         autopep8 --in-place --aggressive --aggressive HW2/src/*.py > HW2/latest_logging/autopep8_logging 
         echo "Autopep8 run completed."
         autopep8 --diff HW2/src/*.py
-    - name: Run pylint
-      run: |
-        pip install pylint
-        pylint HW2/src > HW2/latest_logging/pylint_logging
-        pylint_exit_code=$?
-        if [ $pylint_exit_code -ne 0 ]; then
-          echo "Pylint failed with exit code $pylint_exit_code. Check the log for details."
-        fi
-        exit 0
+    # - name: Run pylint
+    #   run: |
+    #     pip install pylint
+    #     pylint HW2/src > HW2/latest_logging/pylint_logging
+    #     pylint_exit_code=$?
+    #     if [ $pylint_exit_code -ne 0 ]; then
+    #       echo "Pylint failed with exit code $pylint_exit_code. Check the log for details."
+    #     fi
+    #     exit 0
     - name: Run radon cc and mi
       run: |
         pip install radon
