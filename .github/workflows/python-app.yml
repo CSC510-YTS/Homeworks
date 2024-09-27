@@ -41,8 +41,7 @@ jobs:
         file: ./coverage.xml
     - name: Run autopep8
       run: |
-        pip install autopep8
-        autopep8 --in-place --aggressive --aggressive HW2/src/*.py > HW2/latest_logging/autopep8_logging 
+        pip install autopep8 && autopep8 --in-place --aggressive --aggressive HW2/src/*.py > HW2/latest_logging/autopep8_logging 
     - name: Run pylint
       run: |
         pip install pylint
