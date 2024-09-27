@@ -1,15 +1,11 @@
 """
 This is the python file of mergeSort
 """
-
 from HW2.src import rand
-
-
 def merge_sort(arr):
     """
     This is the main function of mergeSort
     """
-
     if len(arr) == 1:
         return arr
 
